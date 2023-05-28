@@ -16,7 +16,7 @@ namespace test1.Models
     {
         public int ID { get; set; }
         public string name { get; set; }
-        public int Anime_id_charater { get; set; }
+        public int Anime_id_character { get; set; }
     
         public virtual Anime Anime { get; set; }
     }

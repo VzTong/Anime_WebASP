@@ -13,10 +13,10 @@ namespace test1.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class WEB_Anime_ASPEntities1 : DbContext
+    public partial class WEB_Anime_ASPEntities : DbContext
     {
-        public WEB_Anime_ASPEntities1()
-            : base("name=WEB_Anime_ASPEntities1")
+        public WEB_Anime_ASPEntities()
+            : base("name=WEB_Anime_ASPEntities")
         {
         }
     
@@ -25,6 +25,7 @@ namespace test1.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<Anime> Animes { get; set; }
         public virtual DbSet<Anime_episode> Anime_episode { get; set; }
         public virtual DbSet<category> categories { get; set; }
@@ -32,7 +33,5 @@ namespace test1.Models
         public virtual DbSet<cover> covers { get; set; }
         public virtual DbSet<studio> studios { get; set; }
         public virtual DbSet<trailer> trailers { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-        public virtual DbSet<Account> Accounts { get; set; }
     }
 }

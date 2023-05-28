@@ -135,46 +135,43 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Anime_WebASP_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Anime.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Anime_WebASP_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Anime_episode.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Anime_WebASP_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Anime_WebASP_DB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Anime_WebASP_DB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Anime_WebASP_DB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Anime_WebASP_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Anime_WebASP_DB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Anime_WebASP_DB.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\category.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Anime_WebASP_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\character.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Anime_WebASP_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\cover.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>Anime_WebASP_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\studio.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Anime_WebASP_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\trailer.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Anime_WebASP_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -265,15 +262,15 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\Model1.Context.tt">
+    <Content Include="Models\Anime_WebASP_DB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Anime_WebASP_DB.edmx</DependentUpon>
+      <LastGenOutput>Anime_WebASP_DB.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\Model1.tt">
+    <Content Include="Models\Anime_WebASP_DB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>Anime_WebASP_DB.edmx</DependentUpon>
+      <LastGenOutput>Anime_WebASP_DB.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -309,12 +306,12 @@
     <Content Include="Content\Source\plyr-master.zip" />
     <Content Include="Content\Source\sass.zip" />
     <Content Include="Content\Source\SlickNav-master.zip" />
-    <EntityDeploy Include="Models\Model1.edmx">
+    <EntityDeploy Include="Models\Anime_WebASP_DB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>Anime_WebASP_DB.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <Content Include="Models\Anime_WebASP_DB.edmx.diagram">
+      <DependentUpon>Anime_WebASP_DB.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
