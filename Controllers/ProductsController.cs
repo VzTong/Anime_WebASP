@@ -18,5 +18,10 @@ namespace test1.Controllers
         {
             return View();
         }
+
+        public ActionResult Anime_Watching()
+        {
+            return View();
+        }
     }
 }
