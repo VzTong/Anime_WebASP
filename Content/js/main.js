@@ -1,4 +1,4 @@
-
+﻿
 'use strict';
 
 (function ($) {
@@ -91,6 +91,12 @@
     });
 
 
+
+    /*------------------------------------------------------------------------
+        Làm active(hiển thị đang ở đâu trên header) của riêng mỗi trang
+
+        Make active(show where in header) for each page separately
+    --------------------------------------------------------------------------*/
     // url
     let url = location.pathname.trim("/");
     $(".header__menu ul > li > a").each((i, item) => {
