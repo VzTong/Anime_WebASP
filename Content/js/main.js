@@ -88,6 +88,17 @@
     $("#scrollToTopButton").click(function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
-     });
+    });
+
+
+    // url
+    let url = location.pathname.trim("/");
+    $(".header__menu ul > li > a").each((i, item) => {
+        if ($(item).attr("href").trim("/") == url) {
+            $(item).closest("li").addClass("active");
+        } else {
+            $(item).closest("li").removeClass("active");
+        }
+    });
 
 })(jQuery);
